@@ -5,12 +5,13 @@ body{
 }
 h1 {
     text-align: center;
-    
 }
+
 .reto1{
     display:flex;
     justify-content:center;
 }
+
 #reto1_img{
     height: 150px;
 }
