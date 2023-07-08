@@ -1,3 +1,16 @@
+body{
+    margin:0;
+    border:0;
+    width: 800px;
+}
+h1 {
+    text-align: center;
+    
+}
+.reto1{
+    display:flex;
+    justify-content:center;
+}
 #reto1_img{
     height: 150px;
 }
@@ -29,9 +42,10 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column;
 }
 
-.reto3_select1{
+.reto3_selects{
     display: flex;
     justify-content:center;
     align-items: center;
