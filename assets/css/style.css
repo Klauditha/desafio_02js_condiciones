@@ -1,3 +1,18 @@
 #reto1_img{
     height: 150px;
 }
+
+.reto2{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#reto2_sticket1, #reto2_sticket2, #reto2_sticket3{
+    height: 100px;
+}
+#reto2_resultado{
+ text-align: center;
+}

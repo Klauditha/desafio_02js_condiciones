@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio Condiciones</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <h1>Reto 1</h1>
     <div class="reto1">
-        <img id="reto1_img" 
+      <img
+        id="reto1_img"
         onclick="bordeImagen()"
-        src="./assets/img/01_logodesafio.png" alt="Logo desafio" />
-        
+        src="./assets/img/01_logodesafio.png"
+        alt="Logo desafio"
+      />
     </div>
     <h1>Reto 2</h1>
-
+    <div class="reto2">
+        <img id="reto2_sticket1" src="./assets/img/02_sticker1.jpg" alt="sticker1" />
+        <img id="reto2_sticket2" src="./assets/img/03_sticker2.jpg" alt="sticker2" />
+        <img id="reto2_sticket3" src="./assets/img/04_sticker3.png" alt="sticker3" />
+        <input id="input_sticker1"/>
+        <input id="input_sticker2"/>
+        <input id="input_sticker3"/>
+    </div>
+    <div class="reto2_resultados">
+        <p id="reto2_resultado">Hola</p>
+        <button id="reto2_button" 
+        onclick="verificarCantidadStickers()"
+        type="button">Verificar</button>
+    </div>
     <h1>Reto 3</h1>
     <script src="./assets/js/index.js"></script>
-</body>
+  </body>
 </html>
