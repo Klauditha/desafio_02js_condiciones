@@ -15,4 +15,9 @@
 }
 #reto2_resultado{
  text-align: center;
+ text-align: center;
+}
+#reto2_button{
+    margin-left: 50%;
+    margin-right: 50%;
 }
