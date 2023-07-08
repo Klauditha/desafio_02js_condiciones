@@ -10,14 +10,29 @@
     justify-content: center;
     justify-items: center;
 }
+
 #reto2_sticket1, #reto2_sticket2, #reto2_sticket3{
     height: 100px;
 }
+
 #reto2_resultado{
  text-align: center;
  text-align: center;
 }
+
 #reto2_button{
     margin-left: 50%;
     margin-right: 50%;
+}
+
+.reto3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.reto3_select1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }

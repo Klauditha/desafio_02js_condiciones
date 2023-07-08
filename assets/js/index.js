@@ -33,3 +33,21 @@ function verificarCantidadStickers() {
   }
 }
 /*RETO 3*/
+function validadPassword(){
+    let valor1 = document.getElementById("reto3_select1").value;
+    let valor2 = document.getElementById("reto3_select2").value;
+    let valor3 = document.getElementById("reto3_select3").value;
+    let resultado_password = document.getElementById("reto3_resultado");
+    let password= valor1 + "" + valor2 + valor3;
+    console.log(password);
+    if(password == "911"){
+        resultado_password.innerHTML = "Password 1 correcto";
+    }
+    else if(password = "714"){
+        resultado_password.innerHTML = "Password 2 correcto";
+    }
+    else{
+        resultado_password.innerHTML = "Password incorrecto";
+    }
+
+}
