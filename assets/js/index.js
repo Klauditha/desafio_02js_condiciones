@@ -1,4 +1,7 @@
-/*RETO 1*/
+/**
+ * Codigo asociado al Reto 1
+ *
+ */
 let imagenTieneBorde = false;
 
 function bordeImagen() {
@@ -11,15 +14,39 @@ function bordeImagen() {
     imagen.style.border = 'none';
   }
 }
-/*RETO 2*/
+/**
+ * Codigo asociado al Reto 2
+ *
+ */
 function verificarCantidadStickers() {
   let input_sticker1 = document.getElementById('input_sticker1').value;
   let input_sticker2 = document.getElementById('input_sticker2').value;
   let input_sticker3 = document.getElementById('input_sticker3').value;
   let resultado_text = document.getElementById('reto2_resultado');
-  if (input_sticker1 == '') input_sticker1 = 0;
-  if (input_sticker2 == '') input_sticker2 = 0;
-  if (input_sticker3 == '') input_sticker3 = 0;
+
+  /*Validacion de Inputs*/
+  if (input_sticker1 == '') {input_sticker1 = 0} 
+  else if(input_sticker1 < 0){
+    document.getElementById('input_sticker1').value = "";
+    resultado_text.innerHTML = 'El valor ingresado no puede ser negativo';
+    return
+  };
+
+  if (input_sticker2 == '') {input_sticker2 = 0}
+  else if(input_sticker2 < 0){
+    document.getElementById('input_sticker2').value = "";
+    resultado_text.innerHTML = 'El valor ingresado no puede ser negativo';
+    return
+  };
+
+  if (input_sticker3 == '') {input_sticker3 = 0;}
+  else if(input_sticker3 < 0){
+    document.getElementById('input_sticker2').value = "";
+    resultado_text.innerHTML = 'El valor ingresado no puede ser negativo';
+    return
+  };
+
+  /*Validacion cantidad de Stickers*/
   let suma =
     parseInt(input_sticker1) +
     parseInt(input_sticker2) +
@@ -31,7 +58,11 @@ function verificarCantidadStickers() {
     resultado_text.innerHTML = 'Llevas demasiados stickers';
   }
 }
-/*RETO 3*/
+
+/**
+ * Codigo asociado al Reto 3
+ *
+ */
 function validadPassword() {
   let valor1 = document.getElementById('reto3_select1').value;
   let valor2 = document.getElementById('reto3_select2').value;
