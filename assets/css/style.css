@@ -3,9 +3,6 @@ body{
     border:0;
     width: 800px;
 }
-h1 {
-    text-align: center;
-}
 
 .reto1{
     display:flex;
